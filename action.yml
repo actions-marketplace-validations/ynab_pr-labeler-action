@@ -7,6 +7,9 @@ inputs:
     default: '{"enhancement/":"enhancement","bug/":"bug"}'
   token:    
     default: ${{ github.token }}
+branding:
+  icon: 'tag'
+  color: 'blue'
 runs:
   using: 'node16'
   main: 'index.js'
