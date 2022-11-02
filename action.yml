@@ -1,0 +1,14 @@
+name: 'Labeler Action'
+description: 'GitHub Action that labels a PR based on the source branch name'
+inputs:
+  branch_label_mappings:
+    description: "A mapping of branch name prefixes to label names in JSON object format"
+    required: true
+    default: '{"enhancement/":"enhancement","bug/":"bug"}'
+  token:    
+    default: ${{ github.token }}
+runs:
+  using: 'node16'
+  main: 'index.js'
+  env:
+    GITHUB_TOKEN: ${{ inputs.token }}

@@ -1,0 +1,24 @@
+{
+  "name": "labeler-action",
+  "version": "1.0.0",
+  "description": "GitHub Action that labels a PR based on the source branch name",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradymholt/labeler-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradymholt/labeler-action/issues"
+  },
+  "homepage": "https://github.com/bradymholt/labeler-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}
