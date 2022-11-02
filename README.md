@@ -15,5 +15,9 @@ GitHub Action that labels a PR based on the source branch name prefix
 ```yaml
 uses: bradymholt/labeler-action@v1.0
 with:
-  branch_label_mappings: '{"enhancement/":"enhancement","bug/":"bug"}'
+  branch_label_mappings: >-
+    {
+      "enhancement/":"enhancement",
+      "bug/":"bug"
+    }
 ```
