@@ -13,5 +13,3 @@ branding:
 runs:
   using: 'node16'
   main: 'index.js'
-  env:
-    GITHUB_TOKEN: ${{ inputs.token }}
