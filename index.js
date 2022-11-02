@@ -1,6 +1,5 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
-const args = process.argv.slice(2);
 
 (async () => {
   if (!github.context.payload.pull_request) {
@@ -12,7 +11,7 @@ const args = process.argv.slice(2);
 
   let branchLabelMappings = {};
   try {
-    branchLabelMappings = JSON.parse(args[0]);
+    branchLabelMappings = JSON.parse(core.getInput('branch_label_mappings'));
   } catch {
     core.setFailed(`The branch_label_mappings input is not formatted correctly.  It should be a JSON formatted object and able to be parsed when calling JSON.parse().`);
     process.exit(1);
@@ -27,7 +26,7 @@ const args = process.argv.slice(2);
     console.log(`Will add label "${mappedLabel}" for branch name "${branchName}".`);
 
     try {
-      const octokit = github.getOctokit(github.context.token);
+      const octokit = github.getOctokit(core.getInput('token'));
       await octokit.rest.issues.addLabels({
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
