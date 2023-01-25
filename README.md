@@ -1,4 +1,4 @@
-# PR Labeler Action
+# Github Action - PR Labeler
 
 GitHub Action that labels a PR based on the source branch name prefix
 
