@@ -11,8 +11,8 @@
     "url": "git+https://github.com/ynab/pr-labeler-action.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "YNAB",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ynab/pr-labeler-action/issues"
   },
