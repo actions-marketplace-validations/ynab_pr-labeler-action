@@ -1,4 +1,4 @@
-name: 'Labeler Action'
+name: 'PR Labeler Action'
 description: 'GitHub Action that labels a PR based on the source branch name'
 inputs:
   branch_label_mappings:
