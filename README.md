@@ -13,7 +13,7 @@ GitHub Action that labels a PR based on the source branch name prefix
 ## Example usage
 
 ```yaml
-uses: ynab/pr-labeler-action@1.0
+uses: ynab/pr-labeler-action@v1
 with:
   branch_label_mappings: >-
     {
